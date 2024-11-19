@@ -121,30 +121,3 @@ button:active
     margin-top: 20px;
     width: 100%;
 }
-
- .taskItem {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border: 1px solid var(--white);
-    border-radius: 5px;
-    background-color: var(--secondaryBackground);
-    margin-bottom: 10px;
-} 
-
-.task p {
-    margin-left: 10px;
-    color: var(--text);
-}
-
-.task.completed p {
-    text-decoration: line-through;
-    color: var(--brownish);
-}
-
-.icons img {
-    cursor: pointer;
-    width: 20px;
-    margin-left: 10px;
-}

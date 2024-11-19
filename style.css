@@ -121,3 +121,65 @@ button:active
     margin-top: 20px;
     width: 100%;
 }
+
+.taskItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid var(--purple);
+    border-radius: 5px;
+    background-color: var(--secondaryBackground);
+    margin-bottom: 10px;
+}
+
+.task p {
+    margin-left: 10px;
+    color: var(--text);
+}
+
+.task.completed p {
+    text-decoration: line-through;
+    color: var(--teal);
+}
+
+.icons img {
+    cursor: pointer;
+    width: 20px;
+    margin-left: 10px;
+}
+
+.boom-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: var(--teal);
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000; /* Ensure it appears above everything else */
+    animation: boom-effect 2s forwards;
+}
+
+@keyframes boom-effect {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+        color: var(--purple); /* Change color for effect */
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(2);
+    }
+}
+
+
+
+
+
+
